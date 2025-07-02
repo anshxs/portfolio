@@ -252,7 +252,7 @@ const GitHubActivity = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <Loader className="w-8 h-8 animate-spin text-gray-600 mx-auto mb-4" />
           <p className="text-gray-600">
@@ -265,7 +265,7 @@ const GitHubActivity = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center max-w-md">
           <p className="text-red-600 mb-4">Error: {error}</p>
           {(error.includes("token") || error.includes("Unauthorized")) && (

@@ -1,9 +1,16 @@
-import React from 'react'
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import HeroIntro from "@/components/Hero";
+import React from "react";
 
 function page() {
   return (
-    <div>page</div>
-  )
+    <>
+      <Header />
+      <HeroIntro />
+      <Footer/>
+    </>
+  );
 }
 
-export default page
+export default page;

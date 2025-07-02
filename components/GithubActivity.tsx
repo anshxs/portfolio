@@ -65,7 +65,8 @@ const GitHubActivity = () => {
 
   const username = "anshxs";
   // Use environment variable or fallback (in production, use process.env.REACT_APP_GITHUB_TOKEN)
-  const GITHUB_TOKEN = "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";
+  const GITHUB_TOKEN =
+    process.env.GITHUB_TOKEN || "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";
 
   const CONTRIBUTIONS_QUERY = `
     query($username: String!, $from: DateTime!, $to: DateTime!) {

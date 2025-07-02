@@ -35,6 +35,7 @@ export default function ScrollingHighlights() {
           {[...Array(4)].map((_, i) => (
             <div
               key={i}
+              style={{fontFamily: 'marlin'}}
               className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee flex-row"
             >
               {HIGHLIGHTS.map((text) => (
@@ -49,6 +50,7 @@ export default function ScrollingHighlights() {
           {[...Array(4)].map((_, i) => (
             <div
               key={i}
+              style={{fontFamily: 'marlin'}}
               className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee-reverse flex-row"
             >
               {HIGHLIGHTS.map((text) => (

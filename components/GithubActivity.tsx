@@ -301,10 +301,10 @@ const GitHubActivity = () => {
         {/* Header */}
         <div className="text-center mb-2">
           <div className="mb-8">
-            <p className="mb-3 text-xs font-normal tracking-widest text-black/60 uppercase md:text-sm">
+            <p style={{fontFamily: 'marlin'}} className="mb-3 text-xs font-normal tracking-widest text-black/60 uppercase md:text-sm">
               Contributions
             </p>
-            <h1 className="text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl text-balance">
+            <h1 style={{fontFamily: 'marlin'}} className="text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl text-balance">
               GitHub{" "}
               <span style={{ fontFamily: "lovelace" }}>
                 <AuroraText
@@ -332,10 +332,10 @@ const GitHubActivity = () => {
                 <Users className="w-6 h-6 text-blue-600" />
               </div>
             </div>
-            <div className="text-sm font-semibold text-gray-500 uppercase text-center tracking-wide mb-1">
+            <div style={{fontFamily: 'marlin'}} className="text-sm font-semibold text-gray-500 uppercase text-center tracking-wide mb-1">
               Followers
             </div>
-            <div className="text-3xl text-center font-bold text-gray-900">
+            <div style={{fontFamily: 'marlin'}} className="text-3xl text-center font-bold text-gray-900">
               {userData?.followers || 0}
             </div>
           </div>
@@ -346,10 +346,10 @@ const GitHubActivity = () => {
                 <Star className="w-6 h-6 text-yellow-600" />
               </div>
             </div>
-            <div className="text-sm font-semibold text-gray-500 uppercase text-center tracking-wide mb-1">
+            <div style={{fontFamily: 'marlin'}} className="text-sm font-semibold text-gray-500 uppercase text-center tracking-wide mb-1">
               Total Stars
             </div>
-            <div className="text-3xl font-bold text-center text-gray-900">
+            <div style={{fontFamily: 'marlin'}} className="text-3xl font-bold text-center text-gray-900">
               {totalStars}
             </div>
           </div>
@@ -360,10 +360,10 @@ const GitHubActivity = () => {
                 <GitBranch className="w-6 h-6 text-green-600" />
               </div>
             </div>
-            <div className="text-sm font-semibold text-gray-500 uppercase text-center tracking-wide mb-1">
+            <div style={{fontFamily: 'marlin'}} className="text-sm font-semibold text-gray-500 uppercase text-center tracking-wide mb-1">
               Public Repos
             </div>
-            <div className="text-3xl font-bold text-center text-gray-900">
+            <div style={{fontFamily: 'marlin'}} className="text-3xl font-bold text-center text-gray-900">
               {publicRepos}
             </div>
           </div>
@@ -374,10 +374,10 @@ const GitHubActivity = () => {
                 <GitFork className="w-6 h-6 text-purple-600" />
               </div>
             </div>
-            <div className="text-sm font-semibold text-gray-500 uppercase text-center tracking-wide mb-1">
+            <div style={{fontFamily: 'marlin'}} className="text-sm font-semibold text-gray-500 uppercase text-center tracking-wide mb-1">
               Total Forks
             </div>
-            <div className="text-3xl font-bold text-center text-gray-900">
+            <div style={{fontFamily: 'marlin'}} className="text-3xl font-bold text-center text-gray-900">
               {totalForks}
             </div>
           </div>
@@ -385,7 +385,7 @@ const GitHubActivity = () => {
 
         {/* Contribution Graph */}
         <div className="bg-secondary max-w-4xl mx-auto rounded-xl px-5 border-2">
-          <h2 className="text-[14px] text-center text-gray-600 font-bold my-4">
+          <h2 style={{fontFamily: 'marlin'}} className="text-[14px] text-center text-gray-600 font-bold my-4">
             Contribution Graph
           </h2>
 
@@ -394,13 +394,14 @@ const GitHubActivity = () => {
             {/* Main grid container */}
             <div className="flex-1 overflow-x-auto">
               {/* Month labels with perfect positioning */}
-              <div className="relative mb-3 h-4">
+              <div className="relative mb-3 ml-9 h-4">
                 {generateMonthLabels().map((monthData, index) => (
                   <span
                     key={`${monthData.name}-${index}-${monthData.position}`}
                     className="absolute text-xs text-gray-700 font-medium"
                     style={{
                       left: `${monthData.position * 15}px`,
+                      fontFamily: 'marlin',
                       transform:
                         monthData.position > 0 ? "translateX(-50%)" : "none",
                     }}
@@ -451,7 +452,7 @@ const GitHubActivity = () => {
 
           {/* Footer */}
           <div className="flex items-center justify-between py-3 border-t border-gray-100">
-            <span className="text-gray-800 text-xs font-medium">
+            <span style={{fontFamily: 'marlin'}} className="text-gray-800 text-xs font-medium">
               {contributionsData?.totalContributions || 0} contributions in the
               last year
             </span>
@@ -475,6 +476,7 @@ const GitHubActivity = () => {
             href={`https://github.com/${username}`}
             target="_blank"
             rel="noopener noreferrer"
+            style={{fontFamily: 'marlin'}}
             className="inline-flex items-center px-4 py-1 bg-secondary text-black rounded-full font-medium text-[14px] border-2"
           >
             View full profile on GitHub

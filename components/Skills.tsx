@@ -76,10 +76,10 @@ export default function SkillsSection() {
             "rgba(255, 255, 255, 0.05) 0px 4px 8px, rgba(255, 255, 255, 0.25) 0px 8px 30px",
         }}
       >
-        <p className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm">
+        <p style={{fontFamily: 'marlin'}} className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm">
           My Skills
         </p>
-        <span >
+        <span style={{fontFamily: 'marlin'}}>
           The Secret{" "}
           <span style={{fontFamily: 'lovelace'}}><AuroraText className="font-lovelace" colors={["#ff3b52","#3b3bff","#7c30ff","#FF0080",   ]}>Sauce</AuroraText>
         </span>
@@ -99,7 +99,7 @@ export default function SkillsSection() {
               height={18}
               className="w-4"
             />
-            <span>{skill.name}</span>
+            <span style={{fontFamily: 'marlin'}}>{skill.name}</span>
           </span>
         ))}
       </div>

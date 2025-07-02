@@ -64,7 +64,7 @@ const TechStackCard = ({ img, name }: { img: string; name: string }) => {
       )}
     >
       <img src={img} alt={name} className="w-6 h-6 object-contain" />
-      <span className="text-sm font-medium text-center dark:text-white">
+      <span style={{fontFamily: 'marlin'}} className="text-sm font-medium text-center dark:text-white">
         {name}
       </span>
     </div>
@@ -74,7 +74,7 @@ const TechStackCard = ({ img, name }: { img: string; name: string }) => {
 export function MarqueeDemo() {
   return (
     <div className="relative flex flex-col items-center space-y-6 py-10 min-h-screen overflow-hidden">
-      <h1 className="text-2xl text-center font-bold tracking-tighter select-none bg-gradient-to-b from-[#c900dbbb] to-[#ff009dc1] bg-clip-text text-transparent">
+      <h1 style={{fontFamily: 'marlin'}} className="text-2xl text-center font-bold tracking-wide select-none bg-gradient-to-b from-[#c900dbbb] to-[#ff009dc1] bg-clip-text text-transparent">
         Passionate about cutting edge technologies.
       </h1>
 

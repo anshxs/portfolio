@@ -25,6 +25,13 @@
 }
 
 @font-face {
+  font-family: 'marlin';
+  src: url('/fonts/marlin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'lovelace';
   src: url('/fonts/lovelace.otf') format('opentype');
   font-weight: normal;

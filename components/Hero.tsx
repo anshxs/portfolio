@@ -14,6 +14,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
 import GithubActivity from "./GithubActivity";
+import BlogComponent from "./Blog";
 
 export default function HeroIntro() {
   const age = getAge();
@@ -25,10 +26,10 @@ export default function HeroIntro() {
         {/* Header: Name + Title + Avatar */}
         <div className="flex justify-between items-center gap-4 pr-4">
           <div>
-            <h1 className="text-lg mt-1 font-semibold text-gray-900">
+            <h1 style={{fontFamily: 'marlin'}} className="text-lg mt-1 font-semibold text-gray-900">
               Ansh Sharma
             </h1>
-            <span className="text-sm -mt-1 text-gray-500 font-medium">
+            <span style={{fontFamily: 'marlin'}} className="text-sm -mt-1 text-gray-500 font-medium">
               Software Developer ⟷ Designer
             </span>
           </div>
@@ -49,11 +50,10 @@ export default function HeroIntro() {
 
         {/* Description */}
         <div className="mt-12 space-y-2">
-          <h2 className="text-2xl font-medium tracking-wide text-black">
+          <h2 style={{fontFamily: 'marlin'}} className="text-2xl font-bold tracking-wide text-black">
             Hey 👋🏼 I’m a {age}-year-old developer and designer based in India.
             <div className="text-gray-500 mt-2">
-              You can call me a dev, but it’s mostly ChatGPT doing unpaid
-              internships under my name.
+              You can call me a dev, but it’s mostly ChatGPT doing unpaid labor while I take all the credit and cry over broken builds.
             </div>
           </h2>
         </div>
@@ -74,11 +74,11 @@ export default function HeroIntro() {
               "rgba(255, 255, 255, 0.05) 0px 4px 8px, rgba(255, 255, 255, 0.25) 0px 8px 30px",
           }}
         >
-          <p className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm">
+          <p style={{fontFamily: 'marlin'}} className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm">
             My Site
           </p>
-          <span>
-            <span className="font-semibold">Explore, experiment</span>{" "}
+          <span style={{fontFamily: 'marlin'}}>
+            <span  className="font-semibold">Explore, experiment</span>{" "}
             <span style={{ fontFamily: "lovelace" }}>
               <AuroraText
                 className="font-lovelace"
@@ -106,10 +106,10 @@ export default function HeroIntro() {
                 className="rounded-xl"
               ></iframe>
               <div className="pointer-events-none z-10 flex flex-col gap-1 px-1 -mt-4">
-                <h3 className="max-w-lg text-neutral-400">
+                <h3 style={{fontFamily: 'marlin'}} className="max-w-lg text-neutral-400">
                   Beat Behind the Code
                 </h3>
-                <p className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
+                <p style={{fontFamily: 'marlin'}} className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
                   Don’t judge — sad songs just help me focus.
                 </p>
               </div>
@@ -139,8 +139,8 @@ export default function HeroIntro() {
 
               {/* Caption */}
               <div className="pointer-events-none z-10 flex flex-col gap-1 px-1 -mt-4">
-                <h3 className="max-w-lg text-gray-200">Partner in Prime</h3>
-                <p className="text-xl font-semibold text-white">
+                <h3 style={{fontFamily: 'marlin'}} className="max-w-lg text-gray-200">Partner in Prime</h3>
+                <p style={{fontFamily: 'marlin'}} className="text-xl font-semibold text-white">
                   She’s the reason my code compiles—and my world does too.
                 </p>
               </div>
@@ -152,6 +152,7 @@ export default function HeroIntro() {
           {/* Add Guestbook and RecentFavorite as components here similarly */}
         </div>
       </section>
+      <BlogComponent/>
       <div className="relative mx-6 md:mx-12 lg:mx-24 rounded-3xl my-40 overflow-hidden border-4 border-black">
         <Image
           src="/gradient.webp"
@@ -170,6 +171,7 @@ export default function HeroIntro() {
           <InteractiveHoverButton>Get Started</InteractiveHoverButton>
         </div>
       </div>
+      
     </>
   );
 }

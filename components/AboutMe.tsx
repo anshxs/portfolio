@@ -36,10 +36,10 @@ export default function AboutMe() {
                 "rgba(255, 255, 255, 0.05) 0px 4px 8px, rgba(255, 255, 255, 0.25) 0px 8px 30px",
             }}
           >
-            <p className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm">
+            <p style={{fontFamily: 'marlin'}} className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm">
               KNOW ABOUT ME
             </p>
-            <span>
+            <span style={{fontFamily: 'marlin'}}>
               <span>Full-Stack Developer and a little bit of </span>
               <span style={{ fontFamily: "lovelace" }}>
                 <AuroraText
@@ -54,18 +54,15 @@ export default function AboutMe() {
 
           <div className="relative z-5 mx-auto flex max-w-xl flex-col gap-y-8 text-center text-base font-light tracking-wider text-black/80 lg:mx-0 lg:max-w-[550px] lg:text-left lg:text-lg dark:text-neutral-300">
             <p>
-              I'm Aayush Bharti, a proactive full-stack developer passionate
-              about creating dynamic web experiences. From frontend to backend,
-              I thrive on solving complex problems with clean, efficient code.
-              My expertise spans React, Next.js, and Node.js, and I'm always
-              eager to learn more.
+              I'm Ansh Sharma — a full-stack developer and product builder who loves bringing bold ideas to life. Whether it's crafting beautiful UIs with Next.js and Tailwind or architecting scalable backends with Supabase, I thrive at the intersection of creativity and code.
             </p>
             <p>
-              When I'm not immersed in work, I'm exploring new ideas and staying
-              curious. Life's about balance, and I love embracing every part of
-              it.
+              I enjoy solving real problems, shipping fast, and constantly learning along the way. From resume builders to dev tools, if it helps someone move faster or think better — I'm probably building it.
+<br/>
+<br/>
+When I'm not deep in code, I’m usually experimenting with a new product idea, helping other devs, or just soaking in good tech and design.
             </p>
-            <p>I believe in waking up each day eager to make a difference!</p>
+            <p>Every day’s a chance to build something awesome — and I’m here for it.</p>
 
             <div className="flex gap-3 mx-auto -mt-4 w-fit lg:mx-0">
               <a

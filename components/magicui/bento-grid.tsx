@@ -61,12 +61,12 @@ const BentoCard = ({
           <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out hidden md:block" />
         )}
         {name && (
-          <h3 className="text-lg font-normal text-neutral-500 dark:text-neutral-300">
+          <h3 style={{fontFamily: 'marlin'}} className="text-lg font-bold text-neutral-500 dark:text-neutral-300">
             {name}
           </h3>
         )}
         {description && (
-          <p className="max-w-lg text-xl font-medium hidden md:block text-black">
+          <p style={{fontFamily: 'marlin'}} className="max-w-lg text-xl font-bold tracking-wide hidden md:block text-black">
             {description}
           </p>
         )}

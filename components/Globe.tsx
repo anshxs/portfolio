@@ -56,7 +56,7 @@ export default function MagicUIControlledGlobe() {
   return (
     <div className="flex flex-col items-center space-y-6 px-4 py-10">
       {/* Gradient Heading */}
-      <h1 className="text-2xl text-center font-bold tracking-tighter select-none bg-gradient-to-b from-[#0012dbbb] to-[#004cffc1] bg-clip-text text-transparent">
+      <h1 style={{fontFamily: 'marlin'}} className="text-2xl text-center font-bold tracking-wide select-none bg-gradient-to-b from-[#0012dbbb] to-[#004cffc1] bg-clip-text text-transparent">
         I’m flexible with time zone communications
       </h1>
 
@@ -66,8 +66,9 @@ export default function MagicUIControlledGlobe() {
           <button
             key={key}
             onClick={() => setSelected(key as keyof typeof LOCATIONS)}
+            style={{fontFamily: 'marlin'}}
             className={cn(
-              'rounded-lg px-3 py-1 text-sm font-medium border transition',
+              'rounded-lg px-3 py-1 text-sm font-bold border transition',
               selected === key
                 ? 'bg-blue-600 text-white border-blue-700'
                 : 'bg-gray-100 text-gray-800 border-gray-300 hover:bg-gray-200'

@@ -64,8 +64,8 @@ export default function CardUses() {
         </div>
 
         <div className="pointer-events-none z-10 flex flex-col gap-1 p-6">
-          <h3 className="max-w-lg text-neutral-400">Uses</h3>
-          <p className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
+          <h3 style={{fontFamily: 'marlin'}} className="max-w-lg text-neutral-400">Uses</h3>
+          <p style={{fontFamily: 'marlin'}} className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
             Check out my favorite tools and spots around the web.
           </p>
         </div>

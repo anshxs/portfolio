@@ -332,6 +332,7 @@ export function BentoDemo() {
           <Button
             onClick={handleCopy}
             variant="outline"
+            style={{fontFamily: 'marlin'}}
             className="flex items-center space-x-2 text-sm"
           >
             {copied ? (
@@ -367,12 +368,12 @@ export function BentoDemo() {
             >
               <div className="flex flex-row items-center gap-2">
                 <div className="flex flex-col">
-                  <figcaption className="text-sm font-medium dark:text-white ">
+                  <figcaption style={{fontFamily: 'marlin'}} className="text-sm font-bold dark:text-white ">
                     {f.name}
                   </figcaption>
                 </div>
               </div>
-              <blockquote className="mt-2 text-xs">{f.body}</blockquote>
+              <blockquote style={{fontFamily: 'marlin'}} className="mt-2 text-xs">{f.body}</blockquote>
             </figure>
           ))}
         </Marquee>

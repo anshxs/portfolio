@@ -5,43 +5,26 @@ import Iphone15Pro from "./magicui/iphone-15-pro";
 
 // ✅ Tech stack data
 const techStacks = [
-  {
-    name: "JavaScript",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-  },
-  {
-    name: "React",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  },
-  {
-    name: "Next.js",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-  },
-  {
-    name: "TypeScript",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-  },
-  {
-    name: "Node.js",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  },
-  {
-    name: "Tailwind CSS",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-  },
-  {
-    name: "Supabase",
-    img: "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png",
-  },
-  {
-    name: "Vercel",
-    img: "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png",
-  },
-  {
-    name: "GitHub",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-  },
+  { name: "ReactJS", img: "https://cdn.simpleicons.org/react" },
+  { name: "NextJS", img: "https://cdn.simpleicons.org/nextdotjs/black" },
+  { name: "TypeScript", img: "https://cdn.simpleicons.org/typescript" },
+  { name: "Tailwind CSS", img: "https://cdn.simpleicons.org/tailwindcss" },
+  { name: "Python", img: "https://cdn.simpleicons.org/python" },
+  { name: "Dart", img: "https://cdn.simpleicons.org/dart" },
+  { name: "Flutter", img: "https://cdn.simpleicons.org/flutter" },
+  { name: "Javascript", img: "https://cdn.simpleicons.org/javascript" },
+  { name: "HTML", img: "https://cdn.simpleicons.org/html5" },
+  { name: "CSS", img: "https://cdn.simpleicons.org/css" },
+  { name: "Motion", img: "https://cdn.simpleicons.org/framer" },
+  { name: "Supabase", img: "https://cdn.simpleicons.org/supabase" },
+  { name: "Firebase", img: "https://cdn.simpleicons.org/firebase" },
+  { name: "PostgreSQL", img: "https://cdn.simpleicons.org/postgresql/sky" },
+  { name: "Git", img: "https://cdn.simpleicons.org/git" },
+  { name: "GitHub", img: "https://cdn.simpleicons.org/github/black" },
+  { name: "Vercel", img: "https://cdn.simpleicons.org/vercel/black" },
+  { name: "Clerk", img: "https://cdn.simpleicons.org/clerk" },
 ];
+
 
 // ✅ Split into 3 rows
 const firstRow = techStacks.slice(0, Math.ceil(techStacks.length / 3));
@@ -114,7 +97,7 @@ export function MarqueeDemo() {
       <div className="relative z-10">
         <Iphone15Pro
           className="size-full px-6"
-          videoSrc="https://videos.pexels.com/video-files/8946986/8946986-uhd_1440_2732_25fps.mp4"
+          src="/phone.png"
         />
       </div>
     </div>

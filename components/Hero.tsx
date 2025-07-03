@@ -8,6 +8,8 @@ import SkillsSection from "./Skills";
 import ScrollingHighlights from "./ScrollingHighlights";
 import AboutMe from "./AboutMe";
 import { AuroraText } from "./magicui/aurora-text";
+import { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 import CardUses from "./CardUses";
 import { BorderBeam } from "./magicui/border-beam";
 import { useRouter } from "next/navigation";
@@ -19,6 +21,16 @@ import BlogComponent from "./Blog";
 export default function HeroIntro() {
   const age = getAge();
   const router = useRouter();
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "30min" });
+      cal("ui", {
+        theme: "light",
+        hideEventTypeDetails: false,
+        layout: "month_view",
+      });
+    })();
+  }, []);
 
   return (
     <>
@@ -26,10 +38,16 @@ export default function HeroIntro() {
         {/* Header: Name + Title + Avatar */}
         <div className="flex justify-between items-center gap-4 pr-4">
           <div>
-            <h1 style={{fontFamily: 'marlin'}} className="text-lg mt-1 font-semibold text-gray-900">
+            <h1
+              style={{ fontFamily: "marlin" }}
+              className="text-lg mt-1 font-semibold text-gray-900"
+            >
               Ansh Sharma
             </h1>
-            <span style={{fontFamily: 'marlin'}} className="text-sm -mt-1 text-gray-500 font-medium">
+            <span
+              style={{ fontFamily: "marlin" }}
+              className="text-sm -mt-1 text-gray-500 font-medium"
+            >
               Software Developer ⟷ Designer
             </span>
           </div>
@@ -50,20 +68,23 @@ export default function HeroIntro() {
 
         {/* Description */}
         <div className="mt-12 space-y-2">
-          <h2 style={{fontFamily: 'marlin'}} className="text-2xl font-bold tracking-wide text-black">
+          <h2
+            style={{ fontFamily: "marlin" }}
+            className="text-2xl font-bold tracking-wide text-black"
+          >
             Hey 👋🏼 I’m a {age}-year-old developer and designer based in India.
             <div className="text-gray-500 mt-2">
-              You can call me a dev, but it’s mostly ChatGPT doing unpaid labor while I take all the credit and cry over broken builds.
+              You can call me a dev, but it’s mostly ChatGPT doing unpaid labor
+              while I take all the credit and cry over broken builds.
             </div>
           </h2>
         </div>
         <BentoDemo />
         <SkillsSection />
-        
       </section>
       <ScrollingHighlights />
-      <GithubActivity/>
-      <section className=" mx-auto px-6 md:px-10 lg:px-20 pt-20 md:pt-0 mb-8">
+      <GithubActivity />
+      <section className=" mx-auto px-6 md:px-10 lg:px-20 pt-20 md:-mt-40 mb-8">
         <AboutMe />
       </section>
       <section className="relative mx-auto max-w-7xl px-4 mt-40 py-10">
@@ -74,11 +95,14 @@ export default function HeroIntro() {
               "rgba(255, 255, 255, 0.05) 0px 4px 8px, rgba(255, 255, 255, 0.25) 0px 8px 30px",
           }}
         >
-          <p style={{fontFamily: 'marlin'}} className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm">
+          <p
+            style={{ fontFamily: "marlin" }}
+            className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm"
+          >
             My Site
           </p>
-          <span style={{fontFamily: 'marlin'}}>
-            <span  className="font-semibold">Explore, experiment</span>{" "}
+          <span style={{ fontFamily: "marlin" }}>
+            <span className="font-semibold">Explore, experiment</span>{" "}
             <span style={{ fontFamily: "lovelace" }}>
               <AuroraText
                 className="font-lovelace"
@@ -106,10 +130,16 @@ export default function HeroIntro() {
                 className="rounded-xl"
               ></iframe>
               <div className="pointer-events-none z-10 flex flex-col gap-1 px-1 -mt-4">
-                <h3 style={{fontFamily: 'marlin'}} className="max-w-lg text-neutral-400">
+                <h3
+                  style={{ fontFamily: "marlin" }}
+                  className="max-w-lg text-neutral-400"
+                >
                   Beat Behind the Code
                 </h3>
-                <p style={{fontFamily: 'marlin'}} className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
+                <p
+                  style={{ fontFamily: "marlin" }}
+                  className="text-xl font-semibold text-neutral-700 dark:text-neutral-300"
+                >
                   Don’t judge — sad songs just help me focus.
                 </p>
               </div>
@@ -120,7 +150,7 @@ export default function HeroIntro() {
             onClick={() => {
               router.push("https://instagram.com/official_diya_taneja");
             }}
-            className="group cursor-pointer flex size-full flex-col bg-red-500 hover:bg-red-500 justify-between overflow-hidden rounded-xl relative col-span-12 h-[300px] md:col-span-6 md:row-span-6 lg:col-span-4"
+            className="group cursor-pointer flex size-full flex-col bg-red-500 hover:bg-red-500 justify-between overflow-hidden rounded-xl relative col-span-12 sm:[350px] md:h-[300px] md:col-span-6 md:row-span-6 lg:col-span-4"
           >
             <div className="size-full relative p-4">
               <div className="absolute inset-0 bg-gradient-to-tl from-white/10 via-transparent to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30"></div>
@@ -139,8 +169,16 @@ export default function HeroIntro() {
 
               {/* Caption */}
               <div className="pointer-events-none z-10 flex flex-col gap-1 px-1 -mt-4">
-                <h3 style={{fontFamily: 'marlin'}} className="max-w-lg text-gray-200">Partner in Prime</h3>
-                <p style={{fontFamily: 'marlin'}} className="text-xl font-semibold text-white">
+                <h3
+                  style={{ fontFamily: "marlin" }}
+                  className="max-w-lg text-gray-200"
+                >
+                  Partner in Crime
+                </h3>
+                <p
+                  style={{ fontFamily: "marlin" }}
+                  className="text-xl font-semibold text-white"
+                >
                   She’s the reason my code compiles—and my world does too.
                 </p>
               </div>
@@ -152,8 +190,11 @@ export default function HeroIntro() {
           {/* Add Guestbook and RecentFavorite as components here similarly */}
         </div>
       </section>
-      <BlogComponent/>
-      <div className="relative mx-6 md:mx-12 lg:mx-24 rounded-3xl my-40 overflow-hidden border-4 border-black">
+      <BlogComponent />
+      <div
+        style={{ fontFamily: "marlin" }}
+        className="relative mx-6 md:mx-12 lg:mx-24 rounded-3xl my-40 overflow-hidden border-4 border-black"
+      >
         <Image
           src="/gradient.webp"
           alt="Gradient"
@@ -168,10 +209,15 @@ export default function HeroIntro() {
           <p className="text-black text-lg sm:text-xl mt-2 mb-4">
             LET&apos;S MAKE IT HAPPEN!
           </p>
-          <InteractiveHoverButton>Get Started</InteractiveHoverButton>
+          <InteractiveHoverButton
+            data-cal-namespace="30min"
+            data-cal-link="anshsx/30min"
+            data-cal-config='{"layout":"month_view","theme":"light"}'
+          >
+            Book a call
+          </InteractiveHoverButton>
         </div>
       </div>
-      
     </>
   );
 }

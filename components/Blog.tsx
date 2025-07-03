@@ -183,7 +183,10 @@ const BlogComponent = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white mt-40 relative overflow-hidden">
+    <div
+      style={{ fontFamily: "marlin" }}
+      className="min-h-screen bg-white mt-10 relative overflow-hidden"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-transparent to-orange-500/20"></div>
@@ -195,9 +198,7 @@ const BlogComponent = () => {
         {/* Hero Section */}
         <section className="text-center py-16 sm:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2
-              className="relative z-20 text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl text-balance text-center mb-4 md:mb-4 max-w-xl mx-auto"
-            >
+            <h2 className="relative z-20 text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl text-balance text-center mb-4 md:mb-4 max-w-xl mx-auto">
               <p className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm">
                 THE BLOG
               </p>
@@ -263,7 +264,9 @@ const BlogComponent = () => {
                     <div className="flex items-center gap-3">
                       <Calendar className="text-black" />
                       <div className="flex flex-col items-start">
-                        <p className="font-bold"><SelectValue/></p>
+                        <p className="font-bold">
+                          <SelectValue />
+                        </p>
                         <p>Select the filter you want</p>
                       </div>
                     </div>
@@ -314,22 +317,22 @@ const BlogComponent = () => {
               <div className="space-y-8">
                 {filteredPosts.map((post) => (
                   <article key={post.id} className="group cursor-pointer">
-                    <div className="flex flex-col sm:flex-row gap-6 p-6 rounded-2xl bg-secondary border transition-all duration-300 h-[200px]">
+                    <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl bg-secondary border transition-all duration-300">
                       {/* Post Image */}
-                      <div className="sm:w-44 sm:flex-shrink-0">
-                        <div className="h-full rounded-xl overflow-hidden bg-gradient-to-br from-purple-500/20 to-orange-500/20">
+                      <div className="w-full sm:w-32 md:w-44 flex-shrink-0">
+                        <div className="aspect-video sm:aspect-auto h-32 sm:h-full rounded-xl overflow-hidden bg-gradient-to-br from-purple-500/20 to-orange-500/20">
                           <img
                             src={post.image}
                             alt={post.title}
-                            className="w-full h-full object-cover "
+                            className="w-full h-full object-cover"
                           />
                         </div>
                       </div>
 
                       {/* Post Content */}
-                      <div className="flex-1 space-y-1">
+                      <div className="flex-1 space-y-2">
                         {/* Meta Info */}
-                        <div className="flex items-center gap-4 text-sm text-gray-500">
+                        <div className="flex flex-wrap items-center gap-2 text-sm text-gray-500">
                           <div className="flex items-center gap-1">
                             <Calendar className="w-4 h-4" />
                             <span>
@@ -337,24 +340,24 @@ const BlogComponent = () => {
                             </span>
                           </div>
                           {post.recently && (
-                            <span className="bg-green-500/20 text-green-600 px-2 py-1 rounded-full text-xs">
+                            <span className="bg-green-500/20 text-green-600 px-2 py-0.5 rounded-full text-xs">
                               Recently released
                             </span>
                           )}
                         </div>
 
                         {/* Title */}
-                        <h2 className="text-md sm:text-2xl font-bold  transition-colors">
+                        <h2 className="text-base sm:text-xl font-semibold transition-colors">
                           {post.title}
                         </h2>
 
                         {/* Excerpt */}
-                        <p className="text-gray-600 text-xs leading-relaxed line-clamp-3">
+                        <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
                           {post.excerpt}
                         </p>
 
                         {/* Tags and Read Time */}
-                        <div className="flex flex-wrap items-center justify-between gap-4">
+                        <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-4">
                           <div className="flex flex-wrap gap-2">
                             {post.tags.map((tag) => (
                               <span

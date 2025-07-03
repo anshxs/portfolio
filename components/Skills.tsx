@@ -10,26 +10,35 @@ const skills = [
   { name: "NextJS", src: "https://cdn.simpleicons.org/nextdotjs/black" },
   { name: "TypeScript", src: "https://cdn.simpleicons.org/typescript" },
   { name: "Tailwind CSS", src: "https://cdn.simpleicons.org/tailwindcss" },
+  { name: "Python", src: "https://cdn.simpleicons.org/python" },
+  { name: "Dart", src: "https://cdn.simpleicons.org/dart" },
+  { name: "Flutter", src: "https://cdn.simpleicons.org/flutter" },
+  { name: "Javascript", src: "https://cdn.simpleicons.org/javascript" },
+  { name: "HTML", src: "https://cdn.simpleicons.org/html5" },
+  { name: "CSS", src: "https://cdn.simpleicons.org/css" },
   { name: "Motion", src: "https://cdn.simpleicons.org/framer" },
-  { name: "Sanity", src: "https://cdn.simpleicons.org/sanity" },
-  { name: "Contentful", src: "https://cdn.simpleicons.org/contentful" },
-  { name: "NodeJS", src: "https://cdn.simpleicons.org/nodedotjs/darkgreen" },
-  { name: "ExpressJS", src: "https://cdn.simpleicons.org/express/black" },
+
+  { name: "Supabase", src: "https://cdn.simpleicons.org/supabase" },
+  { name: "Firebase", src: "https://cdn.simpleicons.org/firebase" },
+  // { name: "Sanity", src: "https://cdn.simpleicons.org/sanity" },
+  // { name: "Contentful", src: "https://cdn.simpleicons.org/contentful" },
+  // { name: "NodeJS", src: "https://cdn.simpleicons.org/nodedotjs/darkgreen" },
+  // { name: "ExpressJS", src: "https://cdn.simpleicons.org/express/black" },
   { name: "PostgreSQL", src: "https://cdn.simpleicons.org/postgresql/sky" },
-  { name: "MongoDB", src: "https://cdn.simpleicons.org/mongodb/darkgreen" },
-  { name: "Prisma", src: "https://cdn.simpleicons.org/prisma/blue" },
-  { name: "Zustand", src: "https://cdn.simpleicons.org/redux/pink" },
-  { name: "Zod", src: "https://cdn.simpleicons.org/zod" },
-  { name: "pnpm", src: "https://cdn.simpleicons.org/pnpm" },
-  { name: "Bun", src: "https://cdn.simpleicons.org/bun/black" },
+  // { name: "MongoDB", src: "https://cdn.simpleicons.org/mongodb/darkgreen" },
+  // { name: "Prisma", src: "https://cdn.simpleicons.org/prisma/blue" },
+  // { name: "Zustand", src: "https://cdn.simpleicons.org/redux/pink" },
+  // { name: "Zod", src: "https://cdn.simpleicons.org/zod" },
+  // { name: "pnpm", src: "https://cdn.simpleicons.org/pnpm" },
+  // { name: "Bun", src: "https://cdn.simpleicons.org/bun/black" },
   { name: "Git", src: "https://cdn.simpleicons.org/git" },
   { name: "GitHub", src: "https://cdn.simpleicons.org/github/black" },
   { name: "Vercel", src: "https://cdn.simpleicons.org/vercel/black" },
-  { name: "AWS", src: "https://cdn.simpleicons.org/amazonwebservices/gray" },
-  { name: "Docker", src: "https://cdn.simpleicons.org/docker" },
-  { name: "Expo", src: "https://cdn.simpleicons.org/expo/gray" },
+  // { name: "AWS", src: "https://cdn.simpleicons.org/amazonwebservices/gray" },
+  // { name: "Docker", src: "https://cdn.simpleicons.org/docker" },
+  // { name: "Expo", src: "https://cdn.simpleicons.org/expo/gray" },
   { name: "Clerk", src: "https://cdn.simpleicons.org/clerk" },
-  { name: "Linux", src: "https://cdn.simpleicons.org/linux" },
+  // { name: "Linux", src: "https://cdn.simpleicons.org/linux" },
 ];
 
 export default function SkillsSection() {
@@ -76,13 +85,22 @@ export default function SkillsSection() {
             "rgba(255, 255, 255, 0.05) 0px 4px 8px, rgba(255, 255, 255, 0.25) 0px 8px 30px",
         }}
       >
-        <p style={{fontFamily: 'marlin'}} className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm">
+        <p
+          style={{ fontFamily: "marlin" }}
+          className="mb-3 text-xs font-normal tracking-widest text-black/80 dark:text-white/70 uppercase md:text-sm"
+        >
           My Skills
         </p>
-        <span style={{fontFamily: 'marlin'}}>
+        <span style={{ fontFamily: "marlin" }}>
           The Secret{" "}
-          <span style={{fontFamily: 'lovelace'}}><AuroraText className="font-lovelace" colors={["#ff3b52","#3b3bff","#7c30ff","#FF0080",   ]}>Sauce</AuroraText>
-        </span>
+          <span style={{ fontFamily: "lovelace" }}>
+            <AuroraText
+              className="font-lovelace"
+              colors={["#ff3b52", "#3b3bff", "#7c30ff", "#FF0080"]}
+            >
+              Sauce
+            </AuroraText>
+          </span>
         </span>
       </h2>
 
@@ -99,7 +117,7 @@ export default function SkillsSection() {
               height={18}
               className="w-4"
             />
-            <span style={{fontFamily: 'marlin'}}>{skill.name}</span>
+            <span style={{ fontFamily: "marlin" }}>{skill.name}</span>
           </span>
         ))}
       </div>

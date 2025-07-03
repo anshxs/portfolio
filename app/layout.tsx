@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import FloatingContactButton from "@/components/FloatingContactButton";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
     "AI Resume Builder",
     "Developer Tools",
     "Mockew AI",
-    'Fullstack Developer',
+    "Fullstack Developer",
     "Build your brand as a developer",
   ],
   metadataBase: new URL("https://yourdomain.com"), // change to your domain
@@ -102,7 +105,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black dark:bg-black dark:text-white`}
       >
         <Toaster position="bottom-right" richColors />
-        <main>{children}</main>
+        <main>
+          <Header />
+          {children}
+          <Footer/>
+          <FloatingContactButton />
+        </main>
       </body>
     </html>
   );

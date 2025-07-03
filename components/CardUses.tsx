@@ -30,7 +30,7 @@ const tools = [
 export default function CardUses() {
   return (
     <Link
-      href="https://code.visualstudio.com/"
+      href="/uses"
       className="group relative flex flex-col justify-between rounded-xl col-span-12 h-[300px] md:col-span-12 md:row-span-6 lg:col-span-4"
     >
       <div className="group relative flex size-full flex-col justify-between overflow-hidden rounded-xl bg-secondary">

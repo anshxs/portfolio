@@ -70,6 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="apple-mobile-web-app-title" content="Ansh Sharma" />
         <meta name="author" content="Ansh Sharma" />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#000000" />

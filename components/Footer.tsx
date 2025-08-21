@@ -3,11 +3,11 @@ import Link from "next/link";
 import { AuroraText } from "./magicui/aurora-text";
 
 const socialLinks = [
-  { name: "linkedin", href: "#" },
-  { name: "email", href: "mailto:you@example.com" },
-  { name: "upwork", href: "#" },
-  { name: "github", href: "https://github.com" },
-  { name: "dribbble", href: "#" },
+  { name: "linkedin", href: "https://www.linkedin.com/in/anshsx" },
+  { name: "email", href: "mailto:anshsxa@gmail.com" },
+  { name: "github", href: "https://github.com/anshxs" },
+  { name: "instagram", href: "https://instagram.com/ansh_xs" },
+  { name: "whatsapp", href: "https://wa.me/917006860750" }
 ];
 
 export default function Footer() {

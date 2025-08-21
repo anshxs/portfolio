@@ -108,7 +108,7 @@ export default function SkillsSection() {
         {skills.map((skill) => (
           <span
             key={skill.name}
-            className="inline-flex items-center justify-center rounded-lg border px-3 py-1 text-sm whitespace-nowrap gap-2 text-black dark:text-white border-white-3 dark:bg-neutral-900 dark:border-white/20 bg-white-2 md:px-4 md:py-1.5"
+            className="inline-flex items-center justify-center rounded-lg border px-3 py-1 text-sm whitespace-nowrap gap-2 text-black dark:text-white border-white-3 dark:bg-neutral-900 dark:border-white/20 bg-secondary md:px-4 md:py-1.5"
           >
             <Image
               alt={skill.name}

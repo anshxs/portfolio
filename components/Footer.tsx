@@ -7,7 +7,8 @@ const socialLinks = [
   { name: "email", href: "mailto:anshsxa@gmail.com" },
   { name: "github", href: "https://github.com/anshxs" },
   { name: "instagram", href: "https://instagram.com/ansh_xs" },
-  { name: "whatsapp", href: "https://wa.me/917006860750" }
+  { name: "whatsapp", href: "https://wa.me/917006860750" },
+  { name: "leetcode", href: "https://leetcode.com/u/anshxs"}
 ];
 
 export default function Footer() {

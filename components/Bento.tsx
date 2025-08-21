@@ -79,27 +79,80 @@ export function BentoDemo() {
     frame();
   };
   const files = [
-    {
-      name: "bitcoin.pdf",
-      body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
-    },
-    {
-      name: "finances.xlsx",
-      body: "A spreadsheet or worksheet is a file made of rows and columns that help sort data, arrange data easily, and calculate numerical data.",
-    },
-    {
-      name: "logo.svg",
-      body: "Scalable Vector Graphics is an Extensible Markup Language-based vector image format for two-dimensional graphics with support for interactivity and animation.",
-    },
-    {
-      name: "keys.gpg",
-      body: "GPG keys are used to encrypt and decrypt email, files, directories, and whole disk partitions and to authenticate messages.",
-    },
-    {
-      name: "seed.txt",
-      body: "A seed phrase, seed recovery phrase or backup seed phrase is a list of words which store all the information needed to recover Bitcoin funds on-chain.",
-    },
-  ];
+  {
+    name: "ReactJS",
+    body: "Experienced in building dynamic, component-based web applications with ReactJS, focusing on performance and scalability.",
+  },
+  {
+    name: "NextJS",
+    body: "Proficient in developing server-side rendered and static websites using Next.js, optimizing for SEO and performance.",
+  },
+  {
+    name: "TypeScript",
+    body: "Skilled in writing strongly typed, maintainable code with TypeScript for both frontend and backend applications.",
+  },
+  {
+    name: "Tailwind CSS",
+    body: "Expert in crafting responsive and modern user interfaces quickly with Tailwind CSS utility-first framework.",
+  },
+  {
+    name: "Python",
+    body: "Capable of developing backend services, data analysis scripts, and automation tools with Python.",
+  },
+  {
+    name: "Dart",
+    body: "Proficient in using Dart programming language to build scalable and cross-platform applications.",
+  },
+  {
+    name: "Flutter",
+    body: "Experienced in creating high-performance, cross-platform mobile apps using Flutter with responsive UI designs.",
+  },
+  {
+    name: "JavaScript",
+    body: "Strong foundation in JavaScript for building interactive, dynamic, and functional web applications.",
+  },
+  {
+    name: "HTML",
+    body: "Well-versed in semantic HTML for building accessible and structured web content.",
+  },
+  {
+    name: "CSS",
+    body: "Experienced in styling web applications with modern CSS, ensuring responsive and visually appealing layouts.",
+  },
+  {
+    name: "Motion",
+    body: "Skilled in implementing smooth animations and transitions to enhance user experience using libraries like Framer Motion.",
+  },
+  {
+    name: "Supabase",
+    body: "Proficient in using Supabase for backend services, authentication, and database management in modern applications.",
+  },
+  {
+    name: "Firebase",
+    body: "Experienced with Firebase for real-time databases, authentication, hosting, and cloud functions.",
+  },
+  {
+    name: "PostgreSQL",
+    body: "Knowledgeable in designing, querying, and optimizing relational databases using PostgreSQL.",
+  },
+  {
+    name: "Git",
+    body: "Proficient in version control using Git for efficient collaboration and code management.",
+  },
+  {
+    name: "GitHub",
+    body: "Experienced in using GitHub for repository hosting, collaboration, and project management workflows.",
+  },
+  {
+    name: "Vercel",
+    body: "Skilled in deploying and hosting modern web applications on Vercel with seamless CI/CD pipelines.",
+  },
+  {
+    name: "Clerk",
+    body: "Proficient in integrating Clerk for user authentication, identity management, and secure access control.",
+  },
+];
+
 
   const features = [
     {
@@ -348,7 +401,7 @@ export function BentoDemo() {
     {
       Icon: PanelsTopLeft,
       name: "The Inside Scoop",
-      description: "Currently Building a Saas Application",
+      description: "Currently Building an eSports Tournament App",
       href: "#",
       className: "col-span-3 lg:col-span-2",
       background: (

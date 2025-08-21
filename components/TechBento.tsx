@@ -97,7 +97,7 @@ export function MarqueeDemo() {
       <div className="relative z-10">
         <Iphone15Pro
           className="size-full px-6"
-          src="/phone.png"
+          src="/wallp.jpeg"
         />
       </div>
     </div>

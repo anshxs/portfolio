@@ -8,7 +8,8 @@ import Image from "next/image";
 const images = [
   "/tigdi.jpg",
   "/me.jpg",
-  "/anshu.webp"
+  "/anshu.webp",
+  'pof.jpeg'
 ];
 
 export default function AboutMe() {

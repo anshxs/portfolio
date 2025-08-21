@@ -295,7 +295,7 @@ const BlogComponent = () => {
                       className={`px-3 py-1 rounded-full text-sm transition-all ${
                         selectedTags.includes(topic)
                           ? "bg-blue-600 text-white"
-                          : "bg-gray-300 text-black hover:text-white hover:bg-blue-500"
+                          : "bg-gray-50 border-1 text-black hover:text-white hover:bg-blue-500"
                       }`}
                     >
                       {topic}
@@ -317,7 +317,7 @@ const BlogComponent = () => {
               <div className="space-y-8">
                 {filteredPosts.map((post) => (
                   <article key={post.id} className="group cursor-pointer">
-                    <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl bg-secondary border transition-all duration-300">
+                    <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 p-4 sm:p-6 rounded-3xl bg-secondary border transition-all duration-300">
                       {/* Post Image */}
                       <div className="w-full sm:w-32 md:w-44 flex-shrink-0">
                         <div className="aspect-video sm:aspect-auto h-32 sm:h-full rounded-xl overflow-hidden bg-gradient-to-br from-purple-500/20 to-orange-500/20">
@@ -362,7 +362,7 @@ const BlogComponent = () => {
                             {post.tags.map((tag) => (
                               <span
                                 key={tag}
-                                className="text-xs text-white bg-blue-600 py-1 px-2 rounded-full hover:text-black hover:bg-amber-600 transition-colors cursor-pointer"
+                                className="text-xs text-gray-600 bg-gray-200 py-1 px-2 rounded-md hover:text-white font-bold hover:bg-blue-600 transition-colors cursor-pointer"
                                 onClick={(e) => {
                                   e.stopPropagation();
                                   toggleTag(tag);

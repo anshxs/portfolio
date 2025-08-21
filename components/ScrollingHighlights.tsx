@@ -4,15 +4,16 @@ import { Star } from "lucide-react";
 import Image from "next/image";
 
 const HIGHLIGHTS = [
-  "Accessible",
-  "Responsive",
-  "Dynamic",
-  "Scalable",
-  "Search Optimized",
-  "Interactive",
-  "Secure",
+  "Developer",
+  "Innovative",
+  "Problem-Solver",
+  "Creative",
+  "Adaptable",
+  "Collaborative",
+  "Efficient",
+  "Curious",
+  "Passionate",
   "Reliable",
-  "Engaging",
 ];
 
 const HighlightItem = ({ text }: { text: string }) => (

@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContactButton from "@/components/FloatingContactButton";
+import LenisProvider from "@/components/LenisProvider";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -104,13 +105,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black dark:bg-black dark:text-white`}
       >
-        <Toaster position="bottom-right" richColors />
-        <main>
-          <Header />
-          {children}
-          <Footer/>
-          <FloatingContactButton />
-        </main>
+        <LenisProvider>
+          <Toaster position="bottom-right" richColors />
+          <main>
+            <Header />
+            {children}
+            <Footer/>
+            <FloatingContactButton />
+          </main>
+        </LenisProvider>
       </body>
     </html>
   );
